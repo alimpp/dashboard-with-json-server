@@ -1,14 +1,16 @@
 <template>
-  <div class="topbar-layout warning_color_bg"></div>
+  <div class="topbar-layout">
+    <changeTheme />
+  </div>
 </template>
 
-<script>
-export default {};
+<script setup>
+import changeTheme from "@/components/changeTheme";
 </script>
 
 <style lang="scss" scoped>
-.topbar-layout{
-    width: 100%;
-    height: 70px;
+.topbar-layout {
+  width: 100%;
+  height: 70px;
 }
 </style>

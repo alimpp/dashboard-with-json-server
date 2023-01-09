@@ -1,13 +1,13 @@
 <template>
   <div class="index-dashboard">
     <h1>Dashboard</h1>
+    <hr>
+    {{test}}
   </div>
 </template>
 
-<script>
-export default {
+<script setup>
 
-}
 </script>
 
 <style>
