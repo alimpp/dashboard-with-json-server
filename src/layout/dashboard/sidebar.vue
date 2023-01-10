@@ -29,7 +29,7 @@
       <div class="d-flex justify-content-center mt-3">
         <router-link class="app_link white_color" to="/dashboard">
           <i class="bi bi-bar-chart app_pointer"></i>
-          <span class="px-2" v-if="isOpen">{{
+          <span class="px-2 size_small" v-if="isOpen">{{
             $t("sidebar.dashboard")
           }}</span></router-link
         >
@@ -37,7 +37,7 @@
       <div class="d-flex justify-content-center mt-3">
         <router-link class="app_link white_color" to="/blogs"
           ><i class="bi bi-blockquote-left app_pointer"></i>
-          <span class="px-2" v-if="isOpen">{{
+          <span class="px-2 size_small" v-if="isOpen">{{
             $t("sidebar.blogs")
           }}</span></router-link
         >
@@ -45,7 +45,7 @@
        <div class="d-flex justify-content-center mt-3">
         <router-link class="app_link white_color" to="/posts"
           ><i class="bi bi-postcard app_pointer"></i>
-          <span class="px-2" v-if="isOpen">{{
+          <span class="px-2 size_small" v-if="isOpen">{{
             $t("sidebar.posts")
           }}</span></router-link
         >
@@ -53,7 +53,7 @@
        <div class="d-flex justify-content-center mt-3">
         <router-link class="app_link white_color" to="/charts"
           ><i class="bi bi-clipboard-data app_pointer"></i>
-          <span class="px-2" v-if="isOpen">{{
+          <span class="px-2 size_small" v-if="isOpen">{{
             $t("sidebar.charts")
           }}</span></router-link
         >
@@ -61,7 +61,7 @@
        <div class="d-flex justify-content-center mt-3">
         <router-link class="app_link white_color" to="/cards"
           ><i class="bi bi-card-checklist app_pointer"></i>
-          <span class="px-2" v-if="isOpen">{{
+          <span class="px-2 size_small" v-if="isOpen">{{
             $t("sidebar.cards")
           }}</span></router-link
         >
@@ -69,7 +69,7 @@
        <div class="d-flex justify-content-center mt-3">
         <router-link class="app_link white_color" to="/elements"
           ><i class="bi bi-building app_pointer"></i>
-          <span class="px-2" v-if="isOpen">{{
+          <span class="px-2 size_small" v-if="isOpen">{{
             $t("sidebar.elements")
           }}</span></router-link
         >
@@ -77,7 +77,7 @@
        <div class="d-flex justify-content-center mt-3">
         <router-link class="app_link white_color" to="/timeline"
           ><i class="bi bi-calendar-week app_pointer"></i>
-          <span class="px-2" v-if="isOpen">{{
+          <span class="px-2 size_small" v-if="isOpen">{{
             $t("sidebar.timeline")
           }}</span></router-link
         >
@@ -85,7 +85,7 @@
       <div class="d-flex justify-content-center mt-3">
         <router-link class="app_link white_color" to="/setting">
           <i class="bi bi-gear-wide-connected app_pointer"></i>
-          <span class="px-2" v-if="isOpen">{{
+          <span class="px-2 size_small" v-if="isOpen">{{
             $t("sidebar.setting")
           }}</span></router-link
         >
