@@ -1,9 +1,16 @@
 {
   "message": "Hello message",
-  "lorem": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi necessitatibus doloribus incidunt eaque, ad id consectetur dolore. Reiciendis explicabo nostrum molestias! Beatae mollitia dolore qui magni aut ex voluptatum odio!",
+  "cash": "Your Cash",
+  "profile": "Profile Account",
   "sidebar": {
     "dashboard": "Dashboard",
     "blogs": "Blogs",
-    "setting": "Setting"
-  }
+    "posts": "Posts",
+    "charts": "Charts",
+    "cards": "Cards",
+    "elements": "Elements",
+    "timeline": "Time Line",
+    "setting": "Settings"
+  },
+  "lorem": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi necessitatibus doloribus incidunt eaque, ad id consectetur dolore. Reiciendis explicabo nostrum molestias! Beatae mollitia dolore qui magni aut ex voluptatum odio!"
 }

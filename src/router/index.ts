@@ -16,6 +16,36 @@ const routes: Array<RouteRecordRaw> = [
         path:"/blogs",
         name: "blogs",
         component: () => import("@/pages/blogs/index.vue"),
+      },
+      {
+        path:"/posts",
+        name: "posts",
+        component: () => import("@/pages/posts/index.vue"),
+      },
+      {
+        path:"/charts",
+        name: "charts",
+        component: () => import("@/pages/charts/index.vue"),
+      },
+      {
+        path:"/cards",
+        name: "cards",
+        component: () => import("@/pages/cards/index.vue"),
+      },
+      {
+        path:"/elements",
+        name: "elements",
+        component: () => import("@/pages/elements/index.vue"),
+      },
+      {
+        path:"/timeline",
+        name: "timeline",
+        component: () => import("@/pages/timeline/index.vue"),
+      },
+      {
+        path:"/setting",
+        name: "setting",
+        component: () => import("@/pages/settings/index.vue"),
       }
     ]
   },
