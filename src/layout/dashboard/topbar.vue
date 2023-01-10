@@ -1,8 +1,9 @@
 <template>
   <div class="topbar-layout">
-    <accountCard />
-       <languageSwitcher class="mx-3" />
-    <changeTheme class="mt-1" />
+    <profileModal />
+    <accountCard class="mx-3" />
+    <languageSwitcher />
+    <changeTheme class="mt-2 mx-2" />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import changeTheme from "@/components/changeTheme";
 import languageSwitcher from "@/components/languageSwitcher";
 import accountCard from "@/components/cards/accountCard";
+import profileModal from "@/components/modals/profileModal";
 </script>
 
 <style lang="scss" scoped>

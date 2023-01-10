@@ -1,20 +1,18 @@
 <template>
   <div class="base-modal-container">
-    <button class="btn btn-primary" @click="changeStatusModal">
+    <button class="btn primary_color_bg white_color" @click="changeStatusModal">
       <div
         class="spinner-border spinner-border-sm text-light"
         role="status"
         v-if="loading"
       ></div>
+      <i class="bi" :class="{ 'bi-person': profile }"></i>
       {{ name }}
     </button>
     <div class="base-modal" v-if="isOpen">
-      <div class="base application_animation">
+      <div class="base white_color_bg app_animation">
         <div class="d-flex justify-content-end">
-          <i
-            class="bi bi-x application_pointer px-2"
-            @click="changeStatusModal"
-          ></i>
+          <i class="bi bi-x app_pointer px-2" @click="changeStatusModal"></i>
         </div>
         <slot name="modalContent"></slot>
       </div>
@@ -23,7 +21,7 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, computed } from "vue";
 const isOpen = ref(false);
 function changeStatusModal() {
   if (isOpen.value == false) {
@@ -32,8 +30,20 @@ function changeStatusModal() {
     isOpen.value = false;
   }
 }
+
+const profile = computed(() => {
+  if (props.icon === "profile") {
+    return true;
+  }
+});
+
 const props = defineProps({
   name: {
+    type: String,
+    default: "",
+    required: true,
+  },
+  icon: {
     type: String,
     default: "",
     required: true,
@@ -60,7 +70,6 @@ const props = defineProps({
     .base {
       width: 90%;
       border-radius: 5px;
-      background: var(--light-color);
       padding: 10px 5px;
     }
   }

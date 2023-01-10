@@ -1,6 +1,7 @@
 {
   "message": "Hello message",
   "account": "Account",
+  "profile": "Profile Account",
   "sidebar": {
     "dashboard": "Dashboard",
     "blogs": "Blogs",
