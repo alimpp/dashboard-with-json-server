@@ -1,0 +1,27 @@
+@import "../_variables/themeColors";
+
+.rtl_design{
+  direction: rtl;
+}
+
+.application_dark_mode_theme {
+  background-color: var(--dark-200-color);
+  color: var(--light-color);
+  transition: 1s;
+}
+.application_light_mode_theme {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  transition: 1s;
+}
+
+.sidebar_dark_mode_theme {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  transition: 1s;
+}
+.sidebar_light_mode_theme {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  transition: 1s;
+}
