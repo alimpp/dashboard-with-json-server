@@ -75,7 +75,6 @@ const watchTheme = computed(() => {
 }
 .isOpen {
   width: 170px;
-  transition: 0.1s;
 }
 .router-link-active {
   border-bottom: 1px solid #fff;
