@@ -9,17 +9,17 @@
   >
     <div class="d-flex justify-content-end px-2 pt-3">
       <i
-        class="bi bi-arrow-right size_medium app_pointer"
+        class="bi bi-list size_large px-3 app_pointer"
         v-if="!isOpen"
         @click="changeStatusSidebar"
       ></i>
       <i
-        class="bi bi-arrow-left size_medium app_pointer"
+        class="bi bi-x-lg size_medium app_pointer"
         v-if="isOpen"
         @click="changeStatusSidebar"
       ></i>
     </div>
-    <div class="d-flex flex-column justify-content-center align-items-center">
+    <div class="d-flex flex-column justify-content-center align-items-center mt-2">
       <img src="@/assets/images/profile-image.jpg" alt="profile image" />
       <span class="size_very_small pt-2" v-if="isOpen"
         >jhondoe1990@yahoo.com</span
