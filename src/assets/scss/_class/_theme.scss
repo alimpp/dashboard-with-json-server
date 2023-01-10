@@ -1,5 +1,9 @@
 @import "../_variables/themeColors";
 
+.rtl_design{
+  direction: rtl;
+}
+
 .application_dark_mode_theme {
   background-color: var(--dark-200-color);
   color: var(--light-color);

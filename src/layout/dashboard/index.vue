@@ -3,7 +3,7 @@
     <div class="sidebar-container">
       <sidebar />
     </div>
-    <div class="router-container">
+    <div class="router-container px-4">
       <topbar />
       <router-view></router-view>
     </div>
@@ -20,10 +20,6 @@ import topbar from "@/layout/dashboard/topbar";
   width: 100%;
   height: 100vh;
   display: flex;
-  .sidebar-container {
-    width: 200px;
-    height: 100vh;
-  }
   .router-container {
     width: 100%;
     height: 100vh;
