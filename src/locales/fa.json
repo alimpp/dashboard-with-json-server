@@ -4,6 +4,11 @@
     "sidebar": {
         "dashboard": "داشبورد",
         "blogs": "بلاگ ها",
+        "posts": "پست ها",
+        "charts": "چارت ها",
+        "cards": "کارت ها",
+        "elements": "آیتم ها",
+        "timeline": "تایم لاین",
         "setting": "تنظیمات"
       }
 }

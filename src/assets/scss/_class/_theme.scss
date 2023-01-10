@@ -7,21 +7,21 @@
 .application_dark_mode_theme {
   background-color: var(--dark-200-color);
   color: var(--light-color);
-  transition: 1s;
+  transition: 0.3s;
 }
 .application_light_mode_theme {
   background-color: var(--light-color);
   color: var(--dark-color);
-  transition: 1s;
+  transition: 0.3s;
 }
 
 .sidebar_dark_mode_theme {
   background-color: var(--dark-color);
   color: var(--light-color);
-  transition: 1s;
+  transition: 0.2s;
 }
 .sidebar_light_mode_theme {
   background-color: var(--primary-color);
   color: var(--white-color);
-  transition: 1s;
+  transition: 0.2s;
 }

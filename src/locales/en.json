@@ -4,6 +4,11 @@
   "sidebar": {
     "dashboard": "Dashboard",
     "blogs": "Blogs",
-    "setting": "Setting"
+    "posts": "Posts",
+    "charts": "Charts",
+    "cards": "Cards",
+    "elements": "Elements",
+    "timeline": "Time Line",
+    "setting": "Settings"
   }
 }
