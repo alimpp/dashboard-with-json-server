@@ -8,6 +8,12 @@ export const applicationTheme = defineStore('theme' , {
         } else if(this.themeStatus === "dark"){
             this.themeStatus = "light"
         }
+       },
+       darkMode(){
+        this.themeStatus = 'dark'
+       } , 
+       lightMode(){
+        this.themeStatus = 'light'
        }
     }
 })

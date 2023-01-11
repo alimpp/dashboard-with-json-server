@@ -18,8 +18,8 @@
     },
     "sidebar": {
         "dashboard": "داشبورد",
-        "blogs": "بلاگ ها",
-        "posts": "پست ها",
+        "tickets": " گزارشات",
+        "tasks": "تسک ها",
         "charts": "چارت ها",
         "cards": "کارت ها",
         "elements": "آیتم ها",

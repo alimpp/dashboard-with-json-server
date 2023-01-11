@@ -82,8 +82,8 @@
     </div>
     <div class="row px-5 mt-5">
       <div
-        class="col-lg-12 rounded"
-        style="height:400px;"
+        class="col-lg-6 rounded"
+        style="height: 400px"
         :class="{
           linechart_dark_mode_theme: watchTheme === 'dark',
           linechart_light_mode_theme: watchTheme === 'light',
@@ -91,6 +91,11 @@
         }"
       >
         <barChart />
+      </div>
+      <div class="col-lg-6 mt-5 pt-5">
+        <span class="size_very_small">{{ $t("lorem") }}</span>
+        <span class="size_very_small">{{ $t("lorem") }}</span>
+        <span class="size_very_small">{{ $t("lorem") }}</span>
       </div>
     </div>
   </div>

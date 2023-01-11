@@ -18,8 +18,8 @@
   },
   "sidebar": {
     "dashboard": "Dashboard",
-    "blogs": "Blogs",
-    "posts": "Posts",
+    "tickets": "Tickets",
+    "tasks": "Tasks",
     "charts": "Charts",
     "cards": "Cards",
     "elements": "Elements",
