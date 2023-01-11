@@ -3,6 +3,8 @@
   "cash": "Your Cash",
   "profile": "Profile Account",
   "theme": "Theme",
+  "lightmode": "Light Mode",
+  "darkmode": "Dark Mode",
   "sidebar": {
     "dashboard": "Dashboard",
     "blogs": "Blogs",

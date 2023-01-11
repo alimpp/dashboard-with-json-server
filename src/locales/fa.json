@@ -3,6 +3,8 @@
     "cash": "موجودی حساب",
     "profile": "پروفایل",
     "theme": "تم برنامه",
+    "lightmode": "تم روشن",
+    "darkmode": "تم تیره",
     "sidebar": {
         "dashboard": "داشبورد",
         "blogs": "بلاگ ها",

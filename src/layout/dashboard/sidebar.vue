@@ -27,10 +27,6 @@
         >jhondoe1990@yahoo.com</span
       >
     </div>
-    <div class="d-flex justify-content-center align-items-center mt-5">
-      <changeTheme />
-      <span v-if="isOpen" class="size_small px-1">{{$t('theme')}}</span>
-    </div>
     <div class="d-flex flex-column pt-2">
       <div class="d-flex justify-content-center mt-3">
         <router-link class="app_link white_color" to="/dashboard">
@@ -103,7 +99,6 @@
 <script setup>
 import { computed, ref } from "vue";
 import { applicationTheme } from "@/stores/applicationTheme";
-import changeTheme from "@/components/changeTheme";
 const theme = applicationTheme();
 const isOpen = ref(false);
 
