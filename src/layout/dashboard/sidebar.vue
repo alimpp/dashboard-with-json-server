@@ -28,7 +28,7 @@
       >
     </div>
     <div class="d-flex flex-column pt-2">
-      <div class="d-flex justify-content-center mt-3">
+      <div class="d-flex justify-content-center mt-5">
         <router-link class="app_link white_color" to="/dashboard">
           <i class="bi bi-bar-chart app_pointer"></i>
           <span class="px-2 size_small" v-if="isOpen">{{

@@ -5,6 +5,7 @@
   "theme": "Theme",
   "lightmode": "Light Mode",
   "darkmode": "Dark Mode",
+  "dashboard": "Dashboard",
   "sidebar": {
     "dashboard": "Dashboard",
     "blogs": "Blogs",

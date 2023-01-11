@@ -34,3 +34,19 @@
     opacity: 1;
   }
 }
+
+::-webkit-scrollbar {
+  width: 2px;
+  border: 0px solid #2c2c2c;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background: #eeeeee;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #cac8c8;
+}
