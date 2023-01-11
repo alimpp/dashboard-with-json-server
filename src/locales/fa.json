@@ -6,6 +6,16 @@
     "lightmode": "تم روشن",
     "darkmode": "تم تیره",
     "dashboard": "داشبورد",
+    "started": "برو به...",
+    "progressbar": "نوار پیشرفت",
+    "progressbaritems":{
+      "dataflow": "جریان دیتا",
+      "serverside": "سمت سرور",
+      "clientside": "سمت مرورگر",
+      "edge": "مرورگر ادج",
+      "opera": "مرورگر اپرا",
+      "chroome": "گوگل کروم"
+    },
     "sidebar": {
         "dashboard": "داشبورد",
         "blogs": "بلاگ ها",

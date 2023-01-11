@@ -1,11 +1,11 @@
 <template>
   <div class="base-button-container d-flex flex-column">
     <button
-      class="btn-sm btn"
+      class="btn-sm btn white_color"
       :class="{
-        'btn-primary': primaryColor,
-        'btn-danger': dangerColor,
-        'btn-warning': warningColor,
+        'primary_color_bg': primaryColor,
+        'danger_color_bg': dangerColor,
+        'warning_color_bg': warningColor,
       }"
     >
       <div
@@ -30,17 +30,17 @@
 <script setup>
 import { computed } from "vue";
 const primaryColor = computed(() => {
-  if (props.color === "btn-primary") {
+  if (props.color === "primary") {
     return true;
   }
 });
 const dangerColor = computed(() => {
-  if (props.color === "btn-danger") {
+  if (props.color === "danger") {
     return true;
   }
 });
 const warningColor = computed(() => {
-  if (props.color === "btn-warning") {
+  if (props.color === "warning") {
     return true;
   }
 });
