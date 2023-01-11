@@ -2,6 +2,7 @@
   "message": "Hello message",
   "cash": "Your Cash",
   "profile": "Profile Account",
+  "theme": "Theme",
   "sidebar": {
     "dashboard": "Dashboard",
     "blogs": "Blogs",

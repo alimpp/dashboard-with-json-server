@@ -19,13 +19,19 @@
         @click="changeStatusSidebar"
       ></i>
     </div>
-    <div class="d-flex flex-column justify-content-center align-items-center mt-2">
+    <div
+      class="d-flex flex-column justify-content-center align-items-center mt-2"
+    >
       <img src="@/assets/images/profile-image.jpg" alt="profile image" />
       <span class="size_very_small pt-2" v-if="isOpen"
         >jhondoe1990@yahoo.com</span
       >
     </div>
-    <div class="d-flex flex-column pt-5">
+    <div class="d-flex justify-content-center align-items-center mt-5">
+      <changeTheme />
+      <span v-if="isOpen" class="size_small px-1">{{$t('theme')}}</span>
+    </div>
+    <div class="d-flex flex-column pt-2">
       <div class="d-flex justify-content-center mt-3">
         <router-link class="app_link white_color" to="/dashboard">
           <i class="bi bi-bar-chart app_pointer"></i>
@@ -42,7 +48,7 @@
           }}</span></router-link
         >
       </div>
-       <div class="d-flex justify-content-center mt-3">
+      <div class="d-flex justify-content-center mt-3">
         <router-link class="app_link white_color" to="/posts"
           ><i class="bi bi-postcard app_pointer"></i>
           <span class="px-2 size_small" v-if="isOpen">{{
@@ -50,7 +56,7 @@
           }}</span></router-link
         >
       </div>
-       <div class="d-flex justify-content-center mt-3">
+      <div class="d-flex justify-content-center mt-3">
         <router-link class="app_link white_color" to="/charts"
           ><i class="bi bi-clipboard-data app_pointer"></i>
           <span class="px-2 size_small" v-if="isOpen">{{
@@ -58,7 +64,7 @@
           }}</span></router-link
         >
       </div>
-       <div class="d-flex justify-content-center mt-3">
+      <div class="d-flex justify-content-center mt-3">
         <router-link class="app_link white_color" to="/cards"
           ><i class="bi bi-card-checklist app_pointer"></i>
           <span class="px-2 size_small" v-if="isOpen">{{
@@ -66,7 +72,7 @@
           }}</span></router-link
         >
       </div>
-       <div class="d-flex justify-content-center mt-3">
+      <div class="d-flex justify-content-center mt-3">
         <router-link class="app_link white_color" to="/elements"
           ><i class="bi bi-building app_pointer"></i>
           <span class="px-2 size_small" v-if="isOpen">{{
@@ -74,7 +80,7 @@
           }}</span></router-link
         >
       </div>
-       <div class="d-flex justify-content-center mt-3">
+      <div class="d-flex justify-content-center mt-3">
         <router-link class="app_link white_color" to="/timeline"
           ><i class="bi bi-calendar-week app_pointer"></i>
           <span class="px-2 size_small" v-if="isOpen">{{
@@ -97,6 +103,7 @@
 <script setup>
 import { computed, ref } from "vue";
 import { applicationTheme } from "@/stores/applicationTheme";
+import changeTheme from "@/components/changeTheme";
 const theme = applicationTheme();
 const isOpen = ref(false);
 
