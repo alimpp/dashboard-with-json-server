@@ -20,6 +20,8 @@ import topbar from "@/layout/dashboard/topbar";
   width: 100%;
   height: 100vh;
   display: flex;
+  overflow-y: hidden;
+  overflow-x: hidden;
   .router-container {
     width: 100%;
     height: 100vh;

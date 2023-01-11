@@ -15,8 +15,8 @@ export const data = {
     ],
     datasets: [
       {
-        label: 'Data One',
-        backgroundColor: '#f87979',
+        label: 'Data Flow in Server',
+        backgroundColor: 'yellow',
         data: [40, 20, 12, 39, 10, 40, 39, 80, 40, 20, 12, 11]
       }
     ]

@@ -80,6 +80,19 @@
         />
       </div>
     </div>
+    <div class="row px-5 mt-5">
+      <div
+        class="col-lg-12 rounded"
+        style="height:400px;"
+        :class="{
+          linechart_dark_mode_theme: watchTheme === 'dark',
+          linechart_light_mode_theme: watchTheme === 'light',
+          rtl_design: $i18n.locale === 'fa',
+        }"
+      >
+        <barChart />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -88,6 +101,7 @@ import { ref } from "vue";
 import lineChart from "@/components/charts/lineChart/lineChart";
 import doughnutChart from "@/components/charts/doughnutChart/doughnutChart";
 import baseProgressBarLine from "@/components/base/baseProgressBarLine";
+import barChart from "@/components/charts/barchart/barChart";
 import baseDivider from "@/components/base/baseDivider";
 import baseButton from "@/components/base/baseButton";
 import { computed } from "vue";
