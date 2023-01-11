@@ -1,7 +1,7 @@
 <template>
   <div class="base-divider-container d-flex flex-column">
-    <span>{{ text }}</span>
-    <div class="line" :style="{'width': width}"></div>
+    <span class="size_samll">{{ text }}</span>
+    <div class="line warning_color_bg" :style="{'width': width}"></div>
   </div>
 </template>
 
@@ -22,17 +22,13 @@ const props = defineProps({
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/scss/_variables/font-size.scss";
 .base-divider-container {
   span {
-    font-size: $--size-ls;
     font-weight: 600;
     padding: 5px 4px;
   }
   .line {
-    // width: 150px;
     height: 1px;
-    background: var(--yellow-color);
   }
 }
 </style>

@@ -5,6 +5,17 @@
   "theme": "Theme",
   "lightmode": "Light Mode",
   "darkmode": "Dark Mode",
+  "dashboard": "Dashboard",
+  "started": "Get Started",
+  "progressbar": "Progress Bar",
+  "progressbaritems":{
+    "dataflow": "Data Flow",
+    "serverside": "Server Side",
+    "clientside": "Client Side",
+    "edge": "Microsoft Edge",
+    "opera": "Opera",
+    "chroome": "Google Chrome"
+  },
   "sidebar": {
     "dashboard": "Dashboard",
     "blogs": "Blogs",

@@ -15,10 +15,6 @@ import { computed } from "vue";
 import { applicationTheme } from "@/stores/applicationTheme";
 const theme = applicationTheme();
 
-// watchTheme === 'dark'
-//         ? 'application_dark_mode_theme'
-//         : 'application_light_mode_theme'
-
 const watchTheme = computed(() => {
   return theme.themeStatus;
 });
