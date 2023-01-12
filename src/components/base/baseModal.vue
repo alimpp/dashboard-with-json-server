@@ -1,16 +1,23 @@
 <template>
   <div class="base-modal-container">
-    <button class="btn primary_color_bg white_color" @click="changeStatusModal">
+    <button class="btn-sm btn primary_color_bg white_color" @click="changeStatusModal">
       <div
         class="spinner-border spinner-border-sm text-light"
         role="status"
         v-if="loading"
       ></div>
-      <i class="bi" :class="{ 'bi-person': profile }"></i>
+      <i class="bi" :class="{ 'bi-person': profile , 'bi-briefcase': deatail }"></i>
       {{ name }}
     </button>
     <div class="base-modal" v-if="isOpen">
-      <div class="base white_color_bg app_animation" :style="{ width: width }">
+      <div
+        class="base app_animation"
+        :class="{
+          basemodal_dark_mode_theme: watchTheme === 'dark',
+          basemodal_light_mode_theme: watchTheme === 'light',
+        }"
+        :style="{ width: width }"
+      >
         <div class="d-flex justify-content-end">
           <i class="bi bi-x app_pointer px-2" @click="changeStatusModal"></i>
         </div>
@@ -22,7 +29,14 @@
 
 <script setup>
 import { ref, computed } from "vue";
+import { applicationTheme } from "@/stores/applicationTheme";
+const theme = applicationTheme();
 const isOpen = ref(false);
+
+const watchTheme = computed(() => {
+  return theme.themeStatus;
+});
+
 function changeStatusModal() {
   if (isOpen.value == false) {
     isOpen.value = true;
@@ -33,6 +47,12 @@ function changeStatusModal() {
 
 const profile = computed(() => {
   if (props.icon === "profile") {
+    return true;
+  }
+});
+
+const deatail = computed(() => {
+  if (props.icon === "deatail") {
     return true;
   }
 });

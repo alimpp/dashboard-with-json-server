@@ -8,6 +8,11 @@
   "dashboard": "Dashboard",
   "started": "Get Started",
   "progressbar": "Progress Bar",
+  "ticketscard": {
+     "email": "Email",
+     "message": "Message",
+     "ticketdeatail": "Ticket Deatail"
+  },
   "progressbaritems":{
     "dataflow": "Data Flow",
     "serverside": "Server Side",

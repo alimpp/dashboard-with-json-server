@@ -36,3 +36,25 @@
   color: var(--dark-color);
   transition: 0.2s;
 }
+
+.basecard_dark_mode_theme {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  transition: 0.2s;
+}
+.basecard_light_mode_theme {
+  background-color: var(--white-color);
+  color: var(--dark-color);
+  transition: 0.2s;
+}
+
+.basemodal_dark_mode_theme {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  transition: 0.2s;
+}
+.basemodal_light_mode_theme {
+  background-color: var(--white-color);
+  color: var(--dark-color);
+  transition: 0.2s;
+}

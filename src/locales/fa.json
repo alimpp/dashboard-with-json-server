@@ -8,6 +8,11 @@
     "dashboard": "داشبورد",
     "started": "برو به...",
     "progressbar": "نوار پیشرفت",
+    "ticketscard": {
+      "email": "ایمیل",
+      "message": "پیام",
+      "ticketdeatail": "توضیحات بیشتر"
+   },
     "progressbaritems":{
       "dataflow": "جریان دیتا",
       "serverside": "سمت سرور",
