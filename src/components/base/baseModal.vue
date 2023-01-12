@@ -10,7 +10,7 @@
       {{ name }}
     </button>
     <div class="base-modal" v-if="isOpen">
-      <div class="base white_color_bg app_animation">
+      <div class="base white_color_bg app_animation" :style="{ width: width }">
         <div class="d-flex justify-content-end">
           <i class="bi bi-x app_pointer px-2" @click="changeStatusModal"></i>
         </div>
@@ -48,6 +48,11 @@ const props = defineProps({
     default: "",
     required: true,
   },
+  width: {
+    type: String,
+    default: "",
+    required: true,
+  },
 });
 </script>
 
@@ -68,7 +73,6 @@ const props = defineProps({
     -webkit-backdrop-filter: blur(0px);
     transition: 1s;
     .base {
-      width: 90%;
       border-radius: 5px;
       padding: 10px 5px;
     }

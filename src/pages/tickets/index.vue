@@ -1,15 +1,30 @@
 <template>
   <div class="index-blogs">
-    <h1>Blogs</h1>
+    {{dataSource}}
   </div>
 </template>
 
-<script>
-export default {
+<script setup>
+import {computed , onBeforeMount } from 'vue'
+import { applicationTicketsDataStore } from "@/stores/applicationTicketsDataStore";
+import {ticketsApi} from '@/stores/api/ticketsApi'
 
-}
+const ticketsApiModule = ticketsApi()
+const tickets = applicationTicketsDataStore()
+
+const dataSource = computed(() => {
+  return tickets.ticketsDataSource
+})
+
+onBeforeMount (() => {
+  ticketsApiModule.tickets()
+})
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+.index-blogs{
+  height: 85vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
 </style>

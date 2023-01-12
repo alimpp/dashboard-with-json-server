@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-export const applicationTheme = defineStore('theme' , {
+export const applicationTheme = defineStore('' , {
     state: () => ({themeStatus : 'dark'}) ,  
     actions : {
        changeThemeStatus(){

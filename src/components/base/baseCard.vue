@@ -10,9 +10,19 @@
 import { computed } from "vue";
 import { applicationTheme } from "@/stores/applicationTheme";
 const theme = applicationTheme();
+
 const watchTheme = computed(() => {
   return theme.themeStatus;
 });
+
+const props = defineProps({
+  width: {
+    type: String,
+    default: "",
+    required: false,
+  },
+});
+
 </script>
 
 <style lang="scss" scoped>
