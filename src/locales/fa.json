@@ -8,10 +8,12 @@
     "dashboard": "داشبورد",
     "started": "برو به...",
     "progressbar": "نوار پیشرفت",
+    "loading": "لطفا صبر کنید",
     "ticketscard": {
       "email": "ایمیل",
       "message": "پیام",
-      "ticketdeatail": "توضیحات بیشتر"
+      "ticketdeatail": "توضیحات بیشتر",
+      "descrpition": "شرح"
    },
     "progressbaritems":{
       "dataflow": "جریان دیتا",

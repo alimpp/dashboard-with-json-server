@@ -5,7 +5,7 @@
       :class="watchTheme === 'dark' ? 'text-light' : 'text-dark'"
       role="status"
     ></div>
-    <span class="px-2">Loading ... </span>
+    <span class="px-2">{{ $t("loading") }} ... </span>
   </div>
 </template>
 

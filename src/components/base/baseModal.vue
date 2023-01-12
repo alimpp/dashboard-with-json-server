@@ -1,6 +1,6 @@
 <template>
   <div class="base-modal-container">
-    <button class="btn-sm btn primary_color_bg white_color" @click="changeStatusModal">
+    <button class="btn primary_color_bg white_color" :class="{'btn-sm': btnSmallSize}" @click="changeStatusModal">
       <div
         class="spinner-border spinner-border-sm text-light"
         role="status"
@@ -73,6 +73,10 @@ const props = defineProps({
     default: "",
     required: true,
   },
+  btnSmallSize: {
+    type: Boolean,
+    default: false
+  }
 });
 </script>
 
