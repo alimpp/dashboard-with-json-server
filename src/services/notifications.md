@@ -1,0 +1,1 @@
+sweet alert icons name => error - info - success - warning
