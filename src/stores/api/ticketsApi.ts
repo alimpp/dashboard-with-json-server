@@ -24,7 +24,7 @@ export const ticketsApi = defineStore("ticketsapi", {
         `${application_base_url}${application_path.DELETE.DELETE_TICKETS}/${id}`
       );
       toast_message('Tickets deleted','success',3000)
-      //applicationTicketsData.deleteTicket(id)
+      applicationTicketsData.deleteTicket(id)
     },
   },
 });
