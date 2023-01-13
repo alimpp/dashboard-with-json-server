@@ -8,6 +8,13 @@
   "dashboard": "Dashboard",
   "started": "Get Started",
   "progressbar": "Progress Bar",
+  "loading": "Loading",
+  "ticketscard": {
+     "email": "Email",
+     "message": "Message",
+     "ticketdeatail": "Ticket Deatail",
+     "descrpition": "Descrpition"
+  },
   "progressbaritems":{
     "dataflow": "Data Flow",
     "serverside": "Server Side",
@@ -18,8 +25,8 @@
   },
   "sidebar": {
     "dashboard": "Dashboard",
-    "blogs": "Blogs",
-    "posts": "Posts",
+    "tickets": "Tickets",
+    "tasks": "Tasks",
     "charts": "Charts",
     "cards": "Cards",
     "elements": "Elements",

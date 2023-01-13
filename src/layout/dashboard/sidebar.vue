@@ -37,18 +37,18 @@
         >
       </div>
       <div class="d-flex justify-content-center mt-3">
-        <router-link class="app_link white_color" to="/blogs"
+        <router-link class="app_link white_color" to="/tickets"
           ><i class="bi bi-blockquote-left app_pointer"></i>
           <span class="px-2 size_small" v-if="isOpen">{{
-            $t("sidebar.blogs")
+            $t("sidebar.tickets")
           }}</span></router-link
         >
       </div>
       <div class="d-flex justify-content-center mt-3">
-        <router-link class="app_link white_color" to="/posts"
+        <router-link class="app_link white_color" to="/tasks"
           ><i class="bi bi-postcard app_pointer"></i>
           <span class="px-2 size_small" v-if="isOpen">{{
-            $t("sidebar.posts")
+            $t("sidebar.tasks")
           }}</span></router-link
         >
       </div>

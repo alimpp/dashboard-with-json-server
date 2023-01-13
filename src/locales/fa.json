@@ -8,6 +8,13 @@
     "dashboard": "داشبورد",
     "started": "برو به...",
     "progressbar": "نوار پیشرفت",
+    "loading": "لطفا صبر کنید",
+    "ticketscard": {
+      "email": "ایمیل",
+      "message": "پیام",
+      "ticketdeatail": "توضیحات بیشتر",
+      "descrpition": "شرح"
+   },
     "progressbaritems":{
       "dataflow": "جریان دیتا",
       "serverside": "سمت سرور",
@@ -18,8 +25,8 @@
     },
     "sidebar": {
         "dashboard": "داشبورد",
-        "blogs": "بلاگ ها",
-        "posts": "پست ها",
+        "tickets": " گزارشات",
+        "tasks": "تسک ها",
         "charts": "چارت ها",
         "cards": "کارت ها",
         "elements": "آیتم ها",

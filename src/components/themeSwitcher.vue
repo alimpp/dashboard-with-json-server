@@ -4,11 +4,11 @@
     <i class="bi bi-palette"></i> {{$t('theme')}}
   </button>
   <ul class="dropdown-menu">
-    <li @click="changeTheme"><a class="dropdown-item d-flex justify-content-center" href="#">
+    <li @click="lightMode"><a class="dropdown-item d-flex justify-content-center" href="#">
     <i class="bi bi-brightness-high px-1"></i>
     {{$t('lightmode')}}  
     </a></li>
-    <li @click="changeTheme"><a class="dropdown-item d-flex justify-content-center" href="#">
+    <li @click="darkMode"><a class="dropdown-item d-flex justify-content-center" href="#">
     <i class="bi bi-moon-stars px-1"></i>
     {{$t('darkmode')}}  
     </a></li>
@@ -23,8 +23,13 @@ const theme = applicationTheme();
 const watchTheme = computed(() => {
   return theme.themeStatus;
 });
-const changeTheme = () => {
-  theme.changeThemeStatus();
+
+const darkMode = () => {
+  theme.darkMode();
+};
+
+const lightMode = () => {
+  theme.lightMode();
 };
 </script>
 
