@@ -9,7 +9,6 @@ export const applicationTicketsDataStore = defineStore("applicationtickets", {
   },
   actions: {
     deleteTicket(id: number) {
-      console.log(id);
       this.tickets = this.tickets.filter((ticket) => ticket.id != id);
     },
   },
