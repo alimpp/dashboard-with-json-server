@@ -17,7 +17,9 @@ export const ticketsApi = defineStore("ticketsapi", {
         .then((res) => {
           applicationTicketsData.tickets = res.data;
         })
-        .catch((error) => {});
+        .catch((error) => {
+          toast_message('Your network is low please try again' , 'error' , 3000)
+        });
     },
     async deleteTickets(id: number) {
       await axios.delete(

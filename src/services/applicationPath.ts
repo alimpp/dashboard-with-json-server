@@ -3,6 +3,7 @@ export const application_base_url: string = "https://jsonplaceholder.typicode.co
 export const application_path = {
   GET: {
     TICKETS: '/comments',
+    TASKS: '/todos',
   },
   POST: {},
   PUT: {},
