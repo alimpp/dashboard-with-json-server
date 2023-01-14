@@ -30,4 +30,10 @@ onBeforeMount(() => {
 });
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.index-posts {
+  height: 85vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+</style>
