@@ -1,12 +1,19 @@
 <template>
   <div class="base-modal-container">
-    <button class="btn primary_color_bg white_color" :class="{'btn-sm': btnSmallSize}" @click="changeStatusModal">
+    <button
+      class="btn primary_color_bg white_color"
+      :class="{ 'btn-sm': btnSmallSize }"
+      @click="changeStatusModal"
+    >
       <div
         class="spinner-border spinner-border-sm text-light"
         role="status"
         v-if="loading"
       ></div>
-      <i class="bi" :class="{ 'bi-person': profile , 'bi-briefcase': deatail }"></i>
+      <i
+        class="bi"
+        :class="{ 'bi-person': profile, 'bi-briefcase': deatail }"
+      ></i>
       {{ name }}
     </button>
     <div class="base-modal" v-if="isOpen">
@@ -75,31 +82,28 @@ const props = defineProps({
   },
   btnSmallSize: {
     type: Boolean,
-    default: false
-  }
+    default: false,
+  },
 });
 </script>
 
 <style lang="scss" scoped>
-.base-modal-container {
-  width: 100%;
-  .base-modal {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(6, 6, 6, 0.5);
-    backdrop-filter: blur(0px);
-    -webkit-backdrop-filter: blur(0px);
-    transition: 1s;
-    .base {
-      border-radius: 5px;
-      padding: 10px 5px;
-    }
+.base-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(6, 6, 6, 0.5);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  transition: 1s;
+  .base {
+    border-radius: 5px;
+    padding: 10px 5px;
   }
 }
 </style>
