@@ -2,8 +2,7 @@
   <baseCard>
     <template #cardContent>
       <div class="d-flex flex-column px-3 py-2">
-        <span class="size_small">{{ $t("taskcard.taskname") }}</span>
-        <span class="size_very_small gray_color">{{ title }}</span>
+        <span class="size_small gray_color">{{ title }}</span>
         <div class="d-flex mt-2">
           <editTaskModal />
           <i class="bi bi-trash3 px-2 pt-1 app_pointer"></i>
