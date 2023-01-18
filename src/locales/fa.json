@@ -15,6 +15,10 @@
       "ticketdeatail": "توضیحات بیشتر",
       "descrpition": "شرح"
    },
+   "taskcard": {
+    "taskname" : "نام تسک" , 
+    "edittask" : "ویرایش تسک" 
+  },
     "progressbaritems":{
       "dataflow": "جریان دیتا",
       "serverside": "سمت سرور",

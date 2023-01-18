@@ -1,6 +1,6 @@
 <template>
  <div class="btn-group">
-  <button style="height:38px;" type="button" class="btn-sm btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+  <button style="height:38px;" type="button" class="btn-sm btn btn-danger rounded" data-bs-toggle="dropdown" aria-expanded="false">
     <i class="bi bi-palette"></i> {{$t('theme')}}
   </button>
   <ul class="dropdown-menu">

@@ -1,15 +1,39 @@
 <template>
   <div class="index-posts">
-    <h1>Posts</h1>
+    <div class="row">
+      <div class="col-lg-4" v-for="data in dataSource" :key="data.id">
+        <taskCard
+          :id="data.id"
+          :title="data.title"
+          :completed="data.completed"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
-<script>
-export default {
+<script setup>
+import { computed, onBeforeMount } from "vue";
+import { applicationTasksDataStore } from "@/stores/applicationTasksDataStore";
+import { tasksApi } from "@/stores/api/tasksApi";
+import taskCard from "@/components/cards/taskCard";
 
-}
+const tasks = applicationTasksDataStore();
+const tasksApiModule = tasksApi();
+
+const dataSource = computed(() => {
+  return tasks.tasksDataSource;
+});
+
+onBeforeMount(() => {
+  return tasksApiModule.tasks();
+});
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+.index-posts {
+  height: 85vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
 </style>
