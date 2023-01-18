@@ -3,9 +3,7 @@
     <baseCard>
       <template #cardContent>
         <div class="d-flex flex-column px-3 py-2">
-          <span class="size_small">{{ $t("ticketscard.email") }}</span>
-          <span class="size_very_small gray_color">{{ email }}</span>
-          <span class="size_small pt-2">{{ $t("ticketscard.message") }}</span>
+          <span class="size_small primary_color">{{ email }}</span>
           <span class="size_very_small gray_color">{{ body }}</span>
           <div class="d-flex mt-2">
             <ticketsDeatailModal :email="email" :body="body" />
