@@ -1,6 +1,8 @@
 import { defineStore } from "pinia";
+import { ITasks } from "@/services/interfaces";
+
 export const applicationTasksDataStore = defineStore("applicationtasks", {
-  state: () => ({ tasks: [] }),
+  state: () => ({ tasks: [] as ITasks[] }),
   getters: {
     tasksDataSource(state) {
       const data = state.tasks;
@@ -8,8 +10,8 @@ export const applicationTasksDataStore = defineStore("applicationtasks", {
     },
   },
   actions: {
-    // deleteTicket(id: number) {
-    //   this.tickets = this.tickets.filter((ticket) => ticket.id != id);
-    // },
+    deleteTicket(id: number) {
+      this.tasks = this.tasks.filter((task) => task.id != id);
+    },
   },
 });
