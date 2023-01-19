@@ -98,6 +98,18 @@
         <span class="size_very_small">{{ $t("lorem") }}</span>
       </div>
     </div>
+    <div class="row px-5 pt-5">
+      <div class="col-lg-6">
+        <baseDivider :text="$t('progressbaritems.dataflow')" width="100px" />
+        <span class="size_very_small">{{ $t("lorem") }}</span>
+        <span class="size_very_small">{{ $t("lorem") }}</span>
+      </div>
+      <div class="col-lg-6">
+        <baseDivider :text="$t('progressbaritems.clientside')" width="100px" />
+        <span class="size_very_small">{{ $t("lorem") }}</span>
+        <span class="size_very_small">{{ $t("lorem") }}</span>
+      </div>
+    </div>
   </div>
 </template>
 
