@@ -6,8 +6,11 @@ export const application_path = {
     TASKS: '/todos',
   },
   POST: {},
-  PUT: {},
+  PUT: {
+    UPDATE_TASK: '/todos'
+  },
   DELETE: {
-    DELETE_TICKETS: '/comments'
+    DELETE_TICKETS: '/comments',
+    DELTE_TASK: '/todos'
   },
 };

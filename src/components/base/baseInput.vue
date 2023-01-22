@@ -1,13 +1,14 @@
 <template>
   <div class="base-input-container">
     <i
-      class="bi"
+      class="dark_color bi"
       :class="{
         'bi-person': username,
         'bi-eye-slash': password,
         'bi-person-lines-fill': name,
         'bi-gender-ambiguous': gender,
         'bi-envelope-at': email,
+        'bi-pencil': pencil,
       }"
     ></i>
     <input
@@ -47,6 +48,11 @@ const gender = computed(() => {
 })
 const email = computed(() => {
   if(props.icon === "bi-envelope-at"){
+    return true
+  }
+})
+const pencil = computed(() => {
+  if(props.icon === "pencil"){
     return true
   }
 })

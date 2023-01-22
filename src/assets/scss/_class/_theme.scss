@@ -27,12 +27,9 @@
 }
 
 .linechart_dark_mode_theme {
-  background-color: var(--dark-color);
-  color: var(--light-color);
   transition: 0.2s;
 }
 .linechart_light_mode_theme {
-  background-color: var(--light-color);
   color: var(--dark-color);
   transition: 0.2s;
 }

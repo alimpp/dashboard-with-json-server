@@ -34,12 +34,10 @@ const loading = ref(false);
 
 const ticketsApiModule = ticketsApi();
 
-const deleteTicket = (id) => {
+const deleteTicket = async (id) => {
   loading.value = true;
-  return ticketsApiModule.deleteTickets(id);
-  setTimeout(() => {
-    loading.value = false;
-  }, 3000);
+  await ticketsApiModule.deleteTickets(id);
+  loading.value = false;
 };
 
 const props = defineProps({

@@ -18,7 +18,7 @@
 </template>
 
 <script setup>
-import { computed, onBeforeMount, ref } from "vue";
+import { computed, onBeforeMount, ref , onMounted } from "vue";
 import { applicationTasksDataStore } from "@/stores/applicationTasksDataStore";
 import { tasksApi } from "@/stores/api/tasksApi";
 import taskCard from "@/components/cards/taskCard";

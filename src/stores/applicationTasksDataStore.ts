@@ -10,8 +10,12 @@ export const applicationTasksDataStore = defineStore("applicationtasks", {
     },
   },
   actions: {
-    deleteTicket(id: number) {
+    deleteTask(id: number) {
       this.tasks = this.tasks.filter((task) => task.id != id);
     },
+    editTask(data: any){
+      const task = this.tasks.filter((task) => task.id == data.id)
+      console.log(task);
+    }
   },
 });
