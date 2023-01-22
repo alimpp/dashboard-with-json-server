@@ -29,13 +29,20 @@ export const tasksApi = defineStore("tasksapi", {
       applicationTasksData.deleteTask(id);
     },
     async editTask(data: any) {
-      await axios.put(
-        `${application_base_url}${application_path.PUT.UPDATE_TASK}/${data.id}`,
-        {
-          title: data.title,
-        }
-      );
-      applicationTasksData.editTask(data)
+      await axios
+        .put(
+          `${application_base_url}${application_path.PUT.UPDATE_TASK}/${data.id}`,
+          {
+            title: data.title,
+          }
+        )
+        .then((res) => {
+          toast_message("Task updated", "success", 2000);
+        })
+        .catch((err) => {
+          toast_message("Your network is low please try again", "error", 3000);
+        });
+      applicationTasksData.editTask(data);
     },
   },
 });
