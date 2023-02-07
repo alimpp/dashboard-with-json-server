@@ -1,11 +1,15 @@
 export interface ITickets {
     id : number , 
-    email : string , 
+    email : string ,
+    title : string, 
     body : string ,
+    message : string
 }
 
 export interface ITasks {
     id : number , 
-    title : string , 
-    completed : string ,
+    body : string , 
+    title : string ,
+    status : string , 
+    assigned : object
 }

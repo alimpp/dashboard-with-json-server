@@ -1,35 +1,42 @@
 <template>
   <div class="index-blogs px-2">
     <baseLoading class="mt-5" v-if="loading" />
-    <div class="row" v-else>
-      <div class="col-lg-4 app_animation" v-for="data in dataSource" :key="data.id">
-        <ticketsCard :email="data.email" :body="data.body" :id="data.id" />
+    <div class="row app_animation" v-else>
+      <div class="row">
+        <div class="col-lg-3" v-for="data in dataSourece" :key="data.id">
+          <ticketsCard
+            :id="data.id"
+            :email="data.email"
+            :title="data.title"
+            :body="data.body"
+            :replayTikcet="data.replayTikcet"
+          />
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref ,computed, onBeforeMount } from "vue";
+import { ref, computed, onBeforeMount } from "vue";
 import baseLoading from "@/components/base/baseLoading";
-import { applicationTicketsDataStore } from "@/stores/applicationTicketsDataStore";
-import { ticketsApi } from "@/stores/api/ticketsApi";
 import ticketsCard from "@/components/cards/ticketsCard";
-const ticketsApiModule = ticketsApi();
-const tickets = applicationTicketsDataStore();
+import { allTickets } from "@/api/ticketsApiModule";
+import { ticketsDataStore } from "@/stores/ticketsDataStore";
 
-const loading = ref(false)
+const loading = ref(false);
+const ticketsDataStoreModule = ticketsDataStore();
 
-const dataSource = computed(() => {
-  return tickets.ticketsDataSource;
+const dataSourece = computed(() => {
+  return ticketsDataStoreModule.tickets;
 });
 
 onBeforeMount(() => {
-  ticketsApiModule.tickets();
-  loading.value = true
+  loading.value = true;
   setTimeout(() => {
-     loading.value = false
-  }, 3000)
+    loading.value = false;
+    allTickets();
+  }, 2000);
 });
 </script>
 

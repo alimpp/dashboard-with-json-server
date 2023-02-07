@@ -10,16 +10,20 @@
   "progressbar": "Progress Bar",
   "loading": "Loading",
   "submit": "Submit",
+
   "ticketscard": {
      "email": "Email",
+     "title": "Title",
      "message": "Message",
-     "ticketdeatail": "Ticket Deatail",
+     "replayticket": "Replay Ticket",
      "descrpition": "Descrpition"
   },
+
   "taskcard": {
     "taskname" : "Task Name" , 
     "edittask" : "Edit Task" 
   },
+
   "progressbaritems":{
     "dataflow": "Data Flow",
     "serverside": "Server Side",
@@ -28,15 +32,17 @@
     "opera": "Opera",
     "chroome": "Google Chrome"
   },
+
   "sidebar": {
     "dashboard": "Dashboard",
     "tickets": "Tickets",
     "tasks": "Tasks",
-    "charts": "Charts",
+    "employees": "Employees",
     "cards": "Cards",
     "elements": "Elements",
     "timeline": "Time Line",
     "setting": "Settings"
   },
+
   "lorem": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi necessitatibus doloribus incidunt eaque, ad id consectetur dolore. Reiciendis explicabo nostrum molestias! Beatae mollitia dolore qui magni aut ex voluptatum odio!"
 }

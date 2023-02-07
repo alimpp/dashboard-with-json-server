@@ -1,16 +1,18 @@
-export const application_base_url: string = "https://jsonplaceholder.typicode.com";
+export const application_base_url: string = "http://localhost:3000";
 
 export const application_path = {
   GET: {
-    TICKETS: '/comments',
-    TASKS: '/todos',
+    TICKETS: '/tickets',
+    TASKS: '/tasks',
+    EMPLOYEES: '/employees'
   },
-  POST: {},
+  POST: {
+    CREATE_TICKETS: '/tickets',
+    CREATE_TASKS: '/tasks',
+    CREATE_EMPLOYEES: '/employees'
+  },
   PUT: {
-    UPDATE_TASK: '/todos'
+    REPLAY_TICKETS: '/tickets',
   },
-  DELETE: {
-    DELETE_TICKETS: '/comments',
-    DELTE_TASK: '/todos'
-  },
+  DELETE: {},
 };

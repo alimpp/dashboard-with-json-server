@@ -13,7 +13,7 @@
     ></i>
     <input
       ref="input"
-      class="form-control px-4"
+      class="form-control px-4 size_small"
       :class="{ error: hasError }"
       :type="type"
       :placeholder="placeholder"
@@ -65,17 +65,17 @@ const props = defineProps({
   placeholder: {
     type: String,
     default: "",
-    required: true,
+    required: false,
   },
   hasError: {
     type: Boolean,
     default: false,
-    required: true,
+    required: false,
   },
   textError: {
     type: String,
     default: "",
-    required: true,
+    required: false,
   },
   modelValue: {
     type: String,

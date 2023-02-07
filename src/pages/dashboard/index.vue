@@ -1,5 +1,5 @@
 <template>
-  <div class="index-dashboard">
+  <div class="index-dashboard app_animation">
     <div class="row px-2">
       <div
         class="col-lg-6 rounded"

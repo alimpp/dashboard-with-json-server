@@ -37,9 +37,14 @@ const deleteTask = async (id) => {
 };
 
 const props = defineProps({
-  completed: {
-    type: Boolean,
-    default: false,
+  id: {
+    type: Number,
+    default: "",
+    required: false,
+  },
+  body: {
+    type: String,
+    default: "",
     required: false,
   },
   title: {
@@ -47,9 +52,14 @@ const props = defineProps({
     default: "",
     required: false,
   },
-  id: {
-    type: Number,
+  status: {
+    type: String,
     default: "",
+    required: false,
+  },
+  assigened: {
+    type: Object,
+    default: {},
     required: false,
   },
 });

@@ -53,10 +53,10 @@
         >
       </div>
       <div class="d-flex justify-content-center mt-3">
-        <router-link class="app_link white_color" to="/charts"
-          ><i class="bi bi-clipboard-data app_pointer"></i>
+        <router-link class="app_link white_color" to="/employees"
+          ><i class="bi bi-person app_pointer"></i>
           <span class="px-2 size_small" v-if="isOpen">{{
-            $t("sidebar.charts")
+            $t("sidebar.employees")
           }}</span></router-link
         >
       </div>
