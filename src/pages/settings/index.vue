@@ -1,15 +1,11 @@
 <template>
-  <div class="index-settings">
-    <h1>Settings</h1>
+  <div class="index-settings app_animation">
+    <baseTab />
   </div>
 </template>
 
-<script>
-export default {
-
-}
+<script setup>
+import baseTab from "@/components/base/baseTab";
 </script>
 
-<style>
-
-</style>
+<style></style>

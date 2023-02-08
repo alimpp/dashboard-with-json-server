@@ -1,6 +1,6 @@
 import { createI18n, LocaleMessages, VueMessageType } from 'vue-i18n'
 
-function loadLocaleMessages(): LocaleMessages<VueMessageType> {
+function loadLocaleMessages(): any {
   const locales = require.context('./locales', true, /[A-Za-z0-9-_,\s]+\.json$/i)
   const messages: LocaleMessages<VueMessageType> = {}
   locales.keys().forEach(key => {
@@ -17,5 +17,5 @@ export default createI18n({
   legacy: false,
   locale: 'en',
   fallbackLocale: 'en',
-  //messages: loadLocaleMessages()
+  messages: loadLocaleMessages()
 })

@@ -24,9 +24,24 @@ export const replayTicket = async (param : any , id : number) => {
         replayTikcet : param.replayTikcet
     })
     .then(() => {
-        SuccessNotification(3000, 'Message Successefull','bottom-center')
+        SuccessNotification(2000, 'Message Successefull','bottom-center')
     })
     .catch(() => {
         ErrorNotification(3000,'Your network is low please try again and check network','bottom-center')
     })
 }
+
+export const CreateTicket = async (param : any) => {
+    await axios.post(`${application_base_url}${application_path.POST.CREATE_TICKETS}` , {
+        email : param.email , 
+        title : param.title ,
+        body : param.body , 
+        replayTikcet : ""
+    })
+    .then(() => {
+        SuccessNotification(2000, 'Ticket created','bottom-center')
+    })
+    .catch(() => {
+        ErrorNotification(3000,'Your network is low please try again and check network','bottom-center')
+    })
+} 

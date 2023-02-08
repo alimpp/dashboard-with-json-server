@@ -12,7 +12,7 @@
       ></div>
       <i
         class="bi"
-        :class="{ 'bi-person': profile, 'bi-briefcase': deatail }"
+        :class="{ 'bi-person': profile, 'bi-briefcase': deatail, 'bi-pencil': pencil }"
       ></i>
       {{ name }}
     </button>
@@ -64,6 +64,12 @@ const deatail = computed(() => {
   }
 });
 
+const pencil = computed(() => {
+  if (props.icon === "pencil") {
+    return true;
+  }
+});
+
 const props = defineProps({
   name: {
     type: String,
@@ -97,8 +103,8 @@ const props = defineProps({
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(6, 6, 6, 0.5);
-  backdrop-filter: blur(0px);
+  background: rgba(8, 10, 10, 0.5);
+  backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(0px);
   transition: 1s;
   .base {

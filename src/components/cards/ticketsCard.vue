@@ -6,7 +6,7 @@
           <span class="size_small primary_color">{{ email }}</span>
           <span class="size_small">{{ title }}</span>
           <span class="size_very_small pt-1">{{ body }}</span>
-          <div class="d-flex mt-2" v-if="replayTikcet === ''">
+          <div class="d-flex mt-2" v-if="replayTikcet === '' && route.name === 'tickets'">
             <replayTicketModal
               :id="id"
               :email="email"
@@ -18,7 +18,7 @@
           <div
             class="replay-box primary_color_bg py-1 px-1 mt-2"
             style="border-radius: 5px"
-            v-else
+            v-if="replayTikcet != ''"
           >
             <span class="light_color size_very_small">{{ replayTikcet }}</span>
           </div>
@@ -29,11 +29,17 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref , onMounted } from "vue";
 import baseCard from "@/components/base/baseCard";
 import replayTicketModal from "@/components/modals/replayTicketModal";
+import {useRoute} from 'vue-router'
 
 const loading = ref(false);
+const route = useRoute()
+
+onMounted(() => {
+  console.log(route);
+})
 
 const props = defineProps({
   id: {

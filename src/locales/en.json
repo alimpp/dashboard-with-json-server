@@ -10,6 +10,7 @@
   "progressbar": "Progress Bar",
   "loading": "Loading",
   "submit": "Submit",
+  "createticket": "Create Ticket",
 
   "ticketscard": {
      "email": "Email",

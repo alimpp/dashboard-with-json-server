@@ -46,7 +46,7 @@ import useVuelidate from "@vuelidate/core";
 import { required, minLength } from "@vuelidate/validators";
 
 const data = ref({
-  replayMessage: ""
+  replayMessage: "",
 });
 
 const rules = computed(() => {
@@ -99,7 +99,9 @@ const sendReplayMessage = async () => {
       replayTikcet: data.value.replayMessage,
     };
     replayTicket(message, props.id);
-    location.reload()
+    setTimeout(() => {
+      location.reload();
+    }, 2000);
   }
 };
 </script>
