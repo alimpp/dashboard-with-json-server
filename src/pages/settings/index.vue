@@ -1,11 +1,11 @@
 <template>
   <div class="index-settings app_animation">
-    <baseTab />
+    <settingBaseTab />
   </div>
 </template>
 
 <script setup>
-import baseTab from "@/components/base/baseTab";
+import settingBaseTab from "@/components/base/settingBaseTab";
 </script>
 
 <style></style>

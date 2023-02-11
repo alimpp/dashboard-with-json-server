@@ -63,7 +63,7 @@
         role="tabpanel"
         aria-labelledby="nav-contact-tab"
       >
-        ...
+        <employeesTab />
       </div>
     </div>
   </div>
@@ -71,6 +71,7 @@
 
 <script setup>
 import ticketsTab from "@/components/settingTabs/ticketsTab";
+import employeesTab from "@/components/settingTabs/employeesTab";
 </script>
 
 <style></style>

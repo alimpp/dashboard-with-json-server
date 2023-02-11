@@ -1,7 +1,6 @@
 <template>
-  <div class="index-employees d-flex flex-column pt-2 px-3">
-    <baseLoading v-if="loading" />
-    <div class="row app_animation" v-else>
+  <div class="employees-tabs d-flex flex-column pt-2 px-3">
+    <div class="row">
       <div class="col-lg-3" v-for="data in dataSource" :key="data.id">
         <employeeCard
           :id="data.id"
@@ -17,28 +16,22 @@
 <script setup>
 import { ref, computed, onBeforeMount } from "vue";
 import { allEmployee } from "@/api/employeesApiModule";
-import baseLoading from "@/components/base/baseLoading";
 import employeeCard from "@/components/cards/employeeCard";
 import { employeesDataStore } from "@/stores/employeesDataStore";
 
 const employeesDataStoreModule = employeesDataStore();
-const loading = ref(false);
 
 const dataSource = computed(() => {
   return employeesDataStoreModule.employees;
 });
 
 onBeforeMount(() => {
-  loading.value = true 
-  setTimeout(() => {
-    allEmployee();
-    loading.value = false 
-  }, 1000);
+  allEmployee();
 });
 </script>
 
 <style>
-.index-employees {
+.employees-tabs {
   height: 85vh;
   margin: 20px 0;
   overflow-y: scroll;

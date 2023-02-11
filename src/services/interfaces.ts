@@ -13,3 +13,13 @@ export interface ITasks {
     status : string , 
     assigned : object
 }
+
+export interface IEmployee {
+    id : number , 
+    username : string , 
+    email : string ,
+    image : string ,
+}
+
+
+

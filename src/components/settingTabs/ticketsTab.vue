@@ -22,7 +22,7 @@ import ticketsCard from "@/components/cards/ticketsCard";
 import { allTickets } from "@/api/ticketsApiModule";
 import { ticketsDataStore } from "@/stores/ticketsDataStore";
 
-const ticketsDataStoreModule = ticketsDataStore();
+const ticketsDataStoreModule = ticketsDataStore();  
 
 const dataSourece = computed(() => {
   return ticketsDataStoreModule.tickets;
@@ -36,6 +36,7 @@ onBeforeMount(() => {
 <style>
 .tickets-tabs {
   height: 85vh;
+  margin: 20px 0;
   overflow-y: scroll;
   overflow-x: hidden;
 }
