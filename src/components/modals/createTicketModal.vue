@@ -85,4 +85,3 @@ const createTicket = async () => {
 };
 </script>
 
-<style></style>

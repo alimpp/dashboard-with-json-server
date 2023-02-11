@@ -18,12 +18,11 @@ export const allEmployee = async () => {
 
 export const createEmpolyee = async (param : any) => {
     await axios.post(`${application_base_url}${application_path.POST.CREATE_EMPLOYEES}`, {
-        username : param.username , 
+        username : `employee_${param.username}` , 
         email : param.email , 
-        image : param.image
     })
     .then(() => {
-        SuccessNotification(2000, 'Ticket created','bottom-center')
+        SuccessNotification(2000, 'Employee created','bottom-center')
     })
     .catch(() => {
         ErrorNotification(3000,'Your network is low please try again and check network','bottom-center')

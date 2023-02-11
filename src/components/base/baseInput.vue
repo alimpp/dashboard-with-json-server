@@ -27,7 +27,7 @@
 <script setup>
 import { computed } from "vue";
 const username = computed(() => {
-  if (props.icon === "person") {
+  if (props.icon === "username") {
     return true;
   }
 });

@@ -1,7 +1,7 @@
 <template>
   <div class="tickets-tabs d-flex flex-column pt-2 px-3">
     <createTicketModal />
-    <div class="row">
+    <div class="row mb-5">
       <div class="col-lg-3" v-for="data in dataSourece" :key="data.id">
         <ticketsCard
           :id="data.id"

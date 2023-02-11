@@ -1,5 +1,6 @@
 {
   "message": "Hello message",
+  "hasbeenanswered": "has been answered",
   "cash": "Your Cash",
   "profile": "Profile Account",
   "theme": "Theme",
@@ -11,6 +12,9 @@
   "loading": "Loading",
   "submit": "Submit",
   "createticket": "Create Ticket",
+  "createemployee": "Create Employee",
+  "username": "Username",
+  "email": "Email",
 
   "ticketscard": {
      "email": "Email",

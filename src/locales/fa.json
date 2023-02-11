@@ -1,5 +1,6 @@
 {
     "message": "سلام مسیج",
+    "hasbeenanswered": "پاسخ داده شده",
     "cash": "موجودی حساب",
     "profile": "پروفایل",
     "theme": "تم برنامه",
@@ -11,6 +12,9 @@
     "loading": "لطفا صبر کنید",
     "submit": "تایید",
     "createticket": "ساخت تیکت",
+    "createemployee": "ساخت کارمند",
+    "username": "نام کاربری",
+    "email": "ایمیل",
 
     "ticketscard": {
       "email": "ایمیل",
