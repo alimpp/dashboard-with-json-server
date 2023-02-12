@@ -15,6 +15,7 @@
     "createemployee": "ساخت کارمند",
     "username": "نام کاربری",
     "email": "ایمیل",
+    "emptyticket": "هیچ تیکتی وجود ندارد",
 
     "ticketscard": {
       "email": "ایمیل",

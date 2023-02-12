@@ -15,6 +15,7 @@
   "createemployee": "Create Employee",
   "username": "Username",
   "email": "Email",
+  "emptyticket": "Tickets is empty",
 
   "ticketscard": {
      "email": "Email",

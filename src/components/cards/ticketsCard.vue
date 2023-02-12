@@ -4,8 +4,16 @@
       <template #cardContent>
         <div class="d-flex flex-column px-3 py-2">
           <div class="d-flex justify-content-end mb-2" dir="ltr">
-            <span class="badge primary_color_bg" v-if="replayTikcet != ''">{{ $t('hasbeenanswered') }}</span>
-            <i class="bi bi-trash app_pointer px-1" v-if="route.name === 'setting'"></i>
+            <span
+              class="primary_color_bg pt-2 px-2 mx-2 rounded light_color size_very_small"
+              v-if="replayTikcet != ''"
+              >{{ $t("hasbeenanswered") }}</span
+            >
+            <i
+              @click="deletedTicket(id)"
+              class="bi bi-trash app_pointer pt-1"
+              v-if="route.name === 'setting'"
+            ></i>
           </div>
           <span class="size_small primary_color">{{ email }}</span>
           <span class="size_small">{{ title }}</span>
@@ -20,7 +28,7 @@
             />
           </div>
           <div
-            class="replay-box primary_color_bg py-1 px-1 mt-2"
+            class="replay-box dark_color primary_color_bg py-1 px-1 mt-2"
             style="border-radius: 5px"
             v-if="replayTikcet != ''"
           >
@@ -37,9 +45,17 @@ import { ref, onMounted } from "vue";
 import baseCard from "@/components/base/baseCard";
 import replayTicketModal from "@/components/modals/replayTicketModal";
 import { useRoute } from "vue-router";
+import { deleteTicket } from "@/api/ticketsApiModule";
 
 const loading = ref(false);
 const route = useRoute();
+
+const deletedTicket = (id) => {
+  deleteTicket(id)
+  setTimeout(() => {
+    location.reload()
+  } , 1000)
+}
 
 const props = defineProps({
   id: {
@@ -69,4 +85,3 @@ const props = defineProps({
   },
 });
 </script>
-

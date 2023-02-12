@@ -39,9 +39,19 @@ export const CreateTicket = async (param : any) => {
         replayTikcet : ""
     })
     .then(() => {
-        SuccessNotification(2000, 'Ticket created','bottom-center')
+        SuccessNotification(2000, 'Ticket Created','bottom-center')
     })
     .catch(() => {
         ErrorNotification(3000,'Your network is low please try again and check network','bottom-center')
     })
 } 
+
+export const deleteTicket = async (id: number) => {
+    await axios.delete(`${application_base_url}${application_path.DELETE.DELETE_TICKETS}/${id}`)
+    .then(() => {
+        SuccessNotification(2000, 'Ticket Deleted','bottom-center')
+    })
+    .catch(() => {
+        ErrorNotification(3000,'Your network is low please try again and check network','bottom-center')
+    })
+}

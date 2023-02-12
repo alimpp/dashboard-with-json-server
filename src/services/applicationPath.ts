@@ -14,5 +14,8 @@ export const application_path = {
   PUT: {
     REPLAY_TICKETS: '/tickets',
   },
-  DELETE: {},
+  DELETE: {
+    DELETE_TICKETS: '/tickets',
+    DELETE_TASKS: '/tasks',
+  },
 };
