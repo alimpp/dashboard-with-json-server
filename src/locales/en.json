@@ -16,6 +16,8 @@
   "username": "Username",
   "email": "Email",
   "emptyticket": "Tickets is empty",
+  "status": "Status",
+  "assinged": "Assign To",
 
   "ticketscard": {
      "email": "Email",

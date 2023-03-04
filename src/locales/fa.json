@@ -16,6 +16,8 @@
     "username": "نام کاربری",
     "email": "ایمیل",
     "emptyticket": "هیچ تیکتی وجود ندارد",
+    "status": "وضغیت",
+    "assinged": "اختصاص به",
 
     "ticketscard": {
       "email": "ایمیل",

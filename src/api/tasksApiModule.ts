@@ -16,6 +16,22 @@ export const allTasks = async () => {
 })
 }
 
+export const taskAssignTo = async (param : any , id : number) => {
+    await axios.put(`${application_base_url}${application_path.PUT.ASSIGN_TASK}/${id}`, {
+        id : param.id , 
+        title : param.title , 
+        body : param.body , 
+        status : param.status , 
+        assigned : param.assigned
+    })
+    .then(() => {
+        SuccessNotification(2000, `Task assign To ${param.assigned}`,'bottom-center')
+    })
+    .catch(() => {
+        ErrorNotification(3000,'Your network is low please try again and check network','bottom-center')
+    })
+}
+
 export const createTask = async (param : any) => {
     await axios.post(`${application_base_url}${application_path.POST.CREATE_TASKS}`, {})
     .then(() => {

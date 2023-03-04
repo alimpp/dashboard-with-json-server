@@ -1,8 +1,14 @@
 <template>
   <div class="task-tab d-flex flex-column pt-2 px-3">
     <div class="row">
-      <div class="col-lg-3">
-        {{ dataSource }}
+      <div class="col-lg-3" v-for="data in dataSource" :key="data.id">
+        <taskCard
+          :id="data.id"
+          :title="data.title"
+          :body="data.body"
+          :status="data.status"
+          :assigned="data.assigned"
+        />
       </div>
     </div>
   </div>
@@ -11,7 +17,7 @@
 <script setup>
 import { ref, computed, onBeforeMount } from "vue";
 import taskCard from "@/components/cards/taskCard";
-import {allTasks} from '@/api/tasksApiModule'
+import { allTasks } from "@/api/tasksApiModule";
 import { tasksDataStore } from "@/stores/tasksDataStore";
 
 const taskDataStoreModule = tasksDataStore();

@@ -13,6 +13,7 @@ export const application_path = {
   },
   PUT: {
     REPLAY_TICKETS: '/tickets',
+    ASSIGN_TASK: '/tasks'
   },
   DELETE: {
     DELETE_TICKETS: '/tickets',
