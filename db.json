@@ -1,13 +1,5 @@
 {
-  "tickets": [
-    {
-      "email": "hello@mail.com",
-      "title": "hello world",
-      "body": "world is very good",
-      "replayTikcet": "",
-      "id": 1
-    }
-  ],
+  "tickets": [],
   "tasks": [
     {
       "id": 0,

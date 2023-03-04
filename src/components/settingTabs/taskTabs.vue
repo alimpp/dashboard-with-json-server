@@ -1,6 +1,7 @@
 <template>
   <div class="task-tab d-flex flex-column pt-2 px-3">
     <div class="row">
+      <createTaskModal />
       <div class="col-lg-3" v-for="data in dataSource" :key="data.id">
         <taskCard
           :id="data.id"
@@ -19,6 +20,7 @@ import { ref, computed, onBeforeMount } from "vue";
 import taskCard from "@/components/cards/taskCard";
 import { allTasks } from "@/api/tasksApiModule";
 import { tasksDataStore } from "@/stores/tasksDataStore";
+import createTaskModal from "@/components/modals/createTaskModal";
 
 const taskDataStoreModule = tasksDataStore();
 

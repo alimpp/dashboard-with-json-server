@@ -12,11 +12,12 @@
     "loading": "لطفا صبر کنید",
     "submit": "تایید",
     "createticket": "ساخت تیکت",
+    "createtask": "ساخت تسک",
     "createemployee": "ساخت کارمند",
     "username": "نام کاربری",
     "email": "ایمیل",
     "emptyticket": "هیچ تیکتی وجود ندارد",
-    "status": "وضغیت",
+    "status": "وضعیت",
     "assinged": "اختصاص به",
 
     "ticketscard": {
