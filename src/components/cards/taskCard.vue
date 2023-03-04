@@ -25,7 +25,6 @@
 import { ref } from "vue";
 import baseCard from "@/components/base/baseCard";
 import editTaskModal from "@/components/modals/editTaskModal";
-import { tasksApi } from "@/stores/api/tasksApi";
 
 const tasksApiModule = tasksApi();
 const loading = ref(false);

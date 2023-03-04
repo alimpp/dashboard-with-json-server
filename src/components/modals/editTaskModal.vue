@@ -27,7 +27,6 @@ import { onBeforeMount, onMounted, ref } from "vue";
 import baseModal from "@/components/base/baseModal";
 import baseInput from "@/components/base/baseInput";
 import baseButton from "@/components/base/baseButton";
-import {tasksApi} from '@/stores/api/tasksApi'
 
 const tasksApiModule = tasksApi()
 const data = ref({

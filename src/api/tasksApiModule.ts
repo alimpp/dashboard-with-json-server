@@ -2,11 +2,14 @@ import axios from 'axios'
 import { application_base_url , application_path } from '@/services/applicationPath'
 import { ErrorNotification } from '@/services/notifications'
 import { SuccessNotification } from '@/services/notifications'
+import { tasksDataStore } from '@/stores/tasksDataStore'
+
+const tasksDataStoreModule = tasksDataStore()
 
 export const allTasks = async () => {
    await axios.get(`${application_base_url}${application_path.GET.TASKS}`)
    .then((res)=> {
-    res.data
+    tasksDataStoreModule.tasks = res.data
 })
 .catch(()=> {
     ErrorNotification(3000,'Your network is low please try again and check network','bottom-center')

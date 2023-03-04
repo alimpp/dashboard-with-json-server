@@ -55,7 +55,7 @@
         role="tabpanel"
         aria-labelledby="nav-profile-tab"
       >
-        ...
+        <taskTabs />
       </div>
       <div
         class="tab-pane fade"
@@ -72,6 +72,7 @@
 <script setup>
 import ticketsTab from "@/components/settingTabs/ticketsTab";
 import employeesTab from "@/components/settingTabs/employeesTab";
+import taskTabs from "@/components/settingTabs/taskTabs";
 </script>
 
 <style></style>
