@@ -20,6 +20,11 @@
   "status": "Status",
   "assinged": "Assign To",
 
+  "taskmodal": {
+    "title" : "Title" , 
+    "body" : "Descrpition" 
+  },
+
   "ticketscard": {
      "email": "Email",
      "title": "Title",

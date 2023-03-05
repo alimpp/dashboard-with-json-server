@@ -1,16 +1,14 @@
 <template>
   <div class="topbar-layout">
     <profileModal />
-    <accountCard class="mx-3" />
-    <themeSwitcher />
-    <languageSwitcher class="mx-3" />
+    <themeSwitcher class="mx-2" />
+    <languageSwitcher class="mx-1" />
   </div>
 </template>
 
 <script setup>
 import themeSwitcher from "@/components/themeSwitcher";
 import languageSwitcher from "@/components/languageSwitcher";
-import accountCard from "@/components/cards/accountCard";
 import profileModal from "@/components/modals/profileModal";
 </script>
 

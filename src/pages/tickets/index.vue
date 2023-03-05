@@ -42,7 +42,6 @@ const dataSourece = computed(() => {
 
 onBeforeMount(() => {
   loading.value = true;
-  console.log(ticketsDataStoreModule.tickets.length);
   setTimeout(() => {
     loading.value = false;
     allTickets();

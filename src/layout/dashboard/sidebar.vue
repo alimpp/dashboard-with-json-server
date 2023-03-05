@@ -61,14 +61,6 @@
         >
       </div>
       <div class="d-flex justify-content-center mt-3">
-        <router-link class="app_link white_color" to="/timeline"
-          ><i class="bi bi-calendar-week app_pointer"></i>
-          <span class="px-2 size_small" v-if="isOpen">{{
-            $t("sidebar.timeline")
-          }}</span></router-link
-        >
-      </div>
-      <div class="d-flex justify-content-center mt-3">
         <router-link class="app_link white_color" to="/setting">
           <i class="bi bi-gear-wide-connected app_pointer"></i>
           <span class="px-2 size_small" v-if="isOpen">{{

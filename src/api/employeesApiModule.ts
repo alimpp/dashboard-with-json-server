@@ -22,7 +22,7 @@ export const createEmpolyee = async (param : any) => {
         email : param.email , 
     })
     .then(() => {
-        SuccessNotification(2000, 'Employee created','bottom-center')
+        SuccessNotification(2000, 'Employee Created','bottom-center')
     })
     .catch(() => {
         ErrorNotification(3000,'Your network is low please try again and check network','bottom-center')

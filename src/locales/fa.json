@@ -20,6 +20,11 @@
     "status": "وضعیت",
     "assinged": "اختصاص به",
 
+    "taskmodal": {
+      "title" : "عنوان" , 
+      "body" : "توضیحات" 
+    },
+
     "ticketscard": {
       "email": "ایمیل",
       "title": "عنوان",

@@ -1,5 +1,5 @@
 <template>
-  <div class="task-tab d-flex flex-column pt-2 px-3">
+  <div class="task-tab d-flex flex-column pt-4 px-3">
     <div class="row">
       <createTaskModal />
       <div class="col-lg-3" v-for="data in dataSource" :key="data.id">

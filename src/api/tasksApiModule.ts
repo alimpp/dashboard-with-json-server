@@ -32,20 +32,15 @@ export const taskAssignTo = async (param : any , id : number) => {
     })
 }
 
-export const createTask = async (param : any) => {
-    await axios.post(`${application_base_url}${application_path.POST.CREATE_TASKS}`, {})
-    .then(() => {
-        SuccessNotification(2000, 'Task created','bottom-center')
+export const CreateTask = async (param : any) => {
+    await axios.post(`${application_base_url}${application_path.POST.CREATE_TASKS}`, {
+        title : param.title , 
+        body : param.body , 
+        status : "In Demo Version..." , 
+        assigned : "" ,
     })
-    .catch(() => {
-        ErrorNotification(3000,'Your network is low please try again and check network','bottom-center')
-    })
-}
-
-export const deleteTask = async (id: number) => {
-    await axios.delete(`${application_base_url}${application_path.DELETE.DELETE_TASKS}/${id}`)
     .then(() => {
-        SuccessNotification(2000, 'Task Deleted','bottom-center')
+        SuccessNotification(2000, 'Task Created','bottom-center')
     })
     .catch(() => {
         ErrorNotification(3000,'Your network is low please try again and check network','bottom-center')
